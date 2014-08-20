@@ -49,7 +49,7 @@ describe("all", function(){
     })
   })
   
-  it("should get metadatq of file", function(done) {
+  it("should get metadata of file", function(done) {
     client.metadata("myfirstfile.txt", function(status, reply){
       status.should.eql(200)
       reply.should.have.property("path", "/myfirstfile.txt")
@@ -137,7 +137,7 @@ describe("all", function(){
     })
   })
   
-  it("should get refrence from file from cpref", function(done) {
+  it("should get reference from file from cpref", function(done) {
     client.cpref("myrenamedfile.txt", function(status, reply){
       status.should.eql(200)
       reply.should.have.property('expires')
